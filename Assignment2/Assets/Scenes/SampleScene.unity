@@ -123,6 +123,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &185184306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 185184308}
+  - component: {fileID: 185184307}
+  m_Layer: 0
+  m_Name: TicTacToeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &185184307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185184306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09681b4312ab774787a1850641db587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxManagers:
+  - {fileID: 1367102031}
+  - {fileID: 1133173230}
+  - {fileID: 558989332}
+  - {fileID: 209525196}
+  - {fileID: 1922666563}
+  - {fileID: 618133112}
+  - {fileID: 1897857109}
+  - {fileID: 557632403}
+  - {fileID: 320440051}
+--- !u!4 &185184308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185184306}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.926311, y: 0.39610386, z: 4.3505707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &209525193
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +234,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 3
+  TTTManager: {fileID: 185184307}
 --- !u!1 &223617935
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +390,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 8
+  TTTManager: {fileID: 185184307}
 --- !u!1 &358143878
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +546,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 7
+  TTTManager: {fileID: 185184307}
 --- !u!1 &558989329
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +607,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 2
+  TTTManager: {fileID: 185184307}
 --- !u!1 &618133109
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +668,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 5
+  TTTManager: {fileID: 185184307}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +1000,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 1
+  TTTManager: {fileID: 185184307}
 --- !u!1 &1367102028
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1061,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 0
+  TTTManager: {fileID: 185184307}
 --- !u!1 &1897857106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 6
+  TTTManager: {fileID: 185184307}
 --- !u!1 &1922666560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,6 +1183,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CrossPiece: {fileID: 9009820985846390323, guid: cd61ada2c58c45f4a8bf2409c2f1def1, type: 3}
+  CirclePiece: {fileID: 882786122382264360, guid: fd894556959d8bc49896ab938cef3411, type: 3}
+  BoxNumber: 4
+  TTTManager: {fileID: 185184307}
 --- !u!1 &1940204995
 GameObject:
   m_ObjectHideFlags: 0
